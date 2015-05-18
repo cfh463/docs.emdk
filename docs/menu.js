@@ -9,12 +9,12 @@ var menuStrcture = [
 			},		
 			{
 				name: 'Getting Started',
-				icon: 'fa fa-ticket',
+				icon: 'fa fa-rocket',
 				link: '#',
 				items: [
 					{
 						title: 'Getting Started',
-						icon: 'fa fa-book',
+						icon: 'fa fa-rocket',
 						items: [
 							{
 								name: 'Setup The EMDK',
@@ -73,40 +73,40 @@ var menuStrcture = [
 												name: 'Modifying Profiles',
 												link: '#guide-tutorial-tutModifyBarcodeProfileSettings',
 											},
+											//{
+											//	name: 'Browser Manager',
+											//	link: '#guide-tutorial-tutMxBrowserManager',
+											//},
 											{
-												name: 'Configure Browser Settings',
-												link: '#guide-tutorial-tutMxBrowserManager',
-											},
-											{
-												name: 'Administer the Use of Camera',
+												name: 'Camera Manager',
 												link: '#guide-tutorial-tutMxCameraManager',
 											},
 											{
-												name: 'Using Cellular Manager',
+												name: 'Cellular Manager',
 												link: '#guide-tutorial-tutMxCellularManager',
 											},
 											{
-												name: 'Using Device Admin Manager',
+												name: 'Dev Admin',
 												link: '#guide-tutorial-tutMxDevAdminManager',
 											},
 											{
-												name: 'Using Display Manager',
+												name: 'Display Manager',
 												link: '#guide-tutorial-tutMxDisplayManager',
 											},
+											//{
+											//	name: 'File Manager',
+											//	link: '#guide-tutorial-tutMxFileManager',
+											//},
 											{
-												name: 'Using File Manager',
-												link: '#guide-tutorial-tutMxFileManager',
-											},
-											{
-												name: 'Using AppManager',
+												name: 'App Manager',
 												link: '#guide-tutorial-tutMxAppManager',
 											},
 											{
-												name: 'Setting the Default Launcher',
+												name: 'Set the Default Launcher',
 												link: '#guide-tutorial-tutMxDefaultLauncher',
 											},
 											{
-												name: 'Setting the Clock',
+												name: 'Clock',
 												link: '#guide-tutorial-tutMxClock',
 											},
 											{
@@ -114,27 +114,27 @@ var menuStrcture = [
 												link: '#guide-tutorial-tutMxErrors',
 											},
 											{
-												name: 'Configure Access Points using GPRS Manager',
+												name: 'GPRS Manager',
 												link: '#guide-tutorial-tutMxGPRSManager',
 											},
 											{
-												name: 'Using Persistence Manager',
+												name: 'Persistence Manager',
 												link: '#guide-tutorial-tutMxPersistManager',
 											},
 											{
-												name: 'Using Power Key Manager to disable Airplane Menu Option',
+												name: 'Power Key Manager ',
 												link: '#guide-tutorial-tutMxPowerKeyManager',
 											},
 											{
-												name: 'Power Management using Power Manager',
+												name: 'Power Manager',
 												link: '#guide-tutorial-tutMxPowerManager',
 											},
 											{
-												name: 'Configure Network Profiles using Wi-Fi Manager',
+												name: 'Wi-Fi',
 												link: '#guide-tutorial-tutMxWiFiManager',
 											},
 											{
-												name: 'Controlling Application\'s Access using Access Manager',
+												name: 'Access Manager',
 												link: '#guide-tutorial-tutMxAccessManager',
 											},
 											{
@@ -142,35 +142,35 @@ var menuStrcture = [
 												link: '#guide-tutorial-tutApplyProfileSilently',
 											},
 											{
-												name: 'Configure Bluetooth using Wireless Manager',
+												name: 'Wireless Manager',
 												link: '#guide-tutorial-tutMxWirelessManager',
 											},
 											{
-												name: 'Clear Clipboard using UI Manager',
+												name: 'UI Manager',
 												link: '#guide-tutorial-tutMxUIManager',
 											},
 											{
-												name: 'Specify Touch Mode using Touch Manager',
+												name: 'Touch Manager',
 												link: '#guide-tutorial-tutMxTouchManager',
 											},
 											{
-												name: 'Invoke Enterprise Settings on Settings UI',
+												name: 'Settings Manager',
 												link: '#guide-tutorial-tutMxSettingsManager',
 											},
 											{
-												name: 'Manage USB Configurations',
+												name: 'USB Manager',
 												link: '#guide-tutorial-tutMxUSBManager',
 											},
 											{
-												name: 'Configure use of SD Card',
+												name: 'SD Card Manager',
 												link: '#guide-tutorial-tutMxSDCardManager',
 											},
 											{
-												name: 'Install Certificates',
+												name: 'Certificate Manager',
 												link: '#guide-tutorial-tutMxCertificateManager',
 											},
 											{
-												name: 'Creating Encrypted File System',
+												name: 'Encrypt Manager',
 												link: '#guide-tutorial-tutMxEncryptManager',
 											},
 											{
@@ -241,6 +241,22 @@ var menuStrcture = [
 										]
 									}
 								]
+							},
+							{
+								name: 'SimulScan APIs',
+								link: '#',
+								items: [
+									{
+										title: 'SimulScan API Tutorials',
+										icon: 'fa fa-book',
+										items: [
+											{
+												name: 'Capture critical data from documents using SimulScan API',
+												link: '#guide-tutorial-tutSimulScanAPI',
+											}
+										]
+									}
+								]
 							}
 						]
 					}
@@ -291,7 +307,10 @@ var menuStrcture = [
 								name: 'Scan and Pair Sample',
 								link: '#guide-sample-samplescanandpair',
 							},
-
+							//{
+							//	name: 'SimulScan Sample',
+							//	link: '#guide-sample-samplesimulscan',
+							//},
 							{
 								name: 'Platform Intent Samples',
 								link: '#',
@@ -332,8 +351,33 @@ var menuStrcture = [
 						]
 					}
 				]
-			}
-			,
+			},
+			{
+				name: 'Guides',
+				icon: 'fa fa-book',
+				link: '#',
+				items: [
+					{
+						title: 'Guides',
+						icon: 'fa fa-book',
+						items: [
+							{
+								name: 'SimulScan API',
+								link: '#guide-simulscan_guide',
+							},
+							{
+								name: 'Name-Value Pair',
+								link: '#guide-name_value_pair',
+							}//,
+							//{
+							//	name: 'Extended Status',
+							//	link: '#guide-extended_status',
+							//}
+						]
+					}
+				]
+
+			},
 			{
 				name: 'Reference',
 				icon: 'fa fa-code',
@@ -420,17 +464,13 @@ var menuStrcture = [
 												name: 'Access Manager',
 												link: '#guide-profiles-access',
 											},
+											//{
+											//	name: 'Analytics Manager <span class="label label-primary">New</span>',
+											//	link: '#guide-profiles-analytics',
+											//},
 											{
 												name: 'App Manager',
 												link: '#guide-profiles-app',
-											},
-											{
-												name: 'Audio Manager <span class="label label-primary">New</span>',
-												link: '#guide-profiles-audio',
-											},
-											{
-												name: 'Battery Manager <span class="label label-primary">New</span>',
-												link: '#guide-profiles-battery',
 											},
 											{
 												name: 'Browser Manager <span class="label label-primary">New</span>',
@@ -445,25 +485,16 @@ var menuStrcture = [
 												link: '#guide-profiles-cellular',
 											},
 											{
-												name: 'Cert Manager',
+												name: 'Certificate Manager',
 												link: '#guide-profiles-cert',
 											},
 											{
-												name: 'Clock Manager',
+												name: 'Clock',
 												link: '#guide-profiles-clock',
 											},
 											{
-												name: 'Component Manager <span class="label label-primary">New</span>',
-												link: '#guide-profiles-component',
-											},
-
-											{
-												name: 'DevAdmin Manager <span class="label label-primary">New</span>',
+												name: 'Dev Admin <span class="label label-primary">New</span>',
 												link: '#guide-profiles-devadmin',
-											},
-											{
-												name: 'DHCP Manager <span class="label label-primary">New</span>',
-												link: '#guide-profiles-dhcp',
 											},
 											{
 												name: 'Display Manager <span class="label label-primary">New</span>',
@@ -476,10 +507,6 @@ var menuStrcture = [
 											{
 												name: 'GPRS Manager',
 												link: '#guide-profiles-gprs',
-											},
-											{
-												name: 'Key Mapping Manager <span class="label label-primary">New</span>',
-												link: '#guide-profiles-keymap',
 											},
 											{
 												name: 'Persistence Manager',
@@ -518,7 +545,7 @@ var menuStrcture = [
 												link: '#guide-profiles-usb',
 											},
 											{
-												name: 'WiFi  Manager',
+												name: 'WiFi',
 												link: '#guide-profiles-wifi',
 											},
 											{
